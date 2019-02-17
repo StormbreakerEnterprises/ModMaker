@@ -57,6 +57,7 @@
 		B54694AF2218BCF1008E63A9 /* ModMaker */ = {
 			isa = PBXGroup;
 			children = (
+				B53CC3132219CDA7000CD587 /* MainViewController.swift */,
 				B54694B02218BCF1008E63A9 /* AppDelegate.swift */,
 				B54694B22218BCF1008E63A9 /* ViewController.swift */,
 				B54694B42218BCF1008E63A9 /* Document.swift */,
@@ -64,7 +65,6 @@
 				B54694B82218BCF2008E63A9 /* Main.storyboard */,
 				B54694BB2218BCF2008E63A9 /* Info.plist */,
 				B54694BC2218BCF2008E63A9 /* ModMaker.entitlements */,
-				B53CC3132219CDA7000CD587 /* MainViewController.swift */,
 			);
 			path = ModMaker;
 			sourceTree = "<group>";
