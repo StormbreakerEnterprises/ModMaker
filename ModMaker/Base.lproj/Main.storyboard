@@ -704,7 +704,7 @@
         <!--Tab View Controller-->
         <scene sceneID="Txb-uH-YDw">
             <objects>
-                <tabViewController selectedTabViewItemIndex="3" tabStyle="unspecified" id="CrY-Us-stK" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="3" tabStyle="unspecified" id="CrY-Us-stK" customClass="TabViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="dfu-ph-KPh"/>
                         <tabViewItem identifier="" id="Ekt-3E-rGd"/>
@@ -722,6 +722,7 @@
                     </tabView>
                     <connections>
                         <outlet property="tabView" destination="roC-QT-mVS" id="QYk-NM-ZNe"/>
+                        <outlet property="thisTabView" destination="roC-QT-mVS" id="QJQ-kH-e3Z"/>
                         <segue destination="yWa-Wr-u3p" kind="relationship" relationship="tabItems" id="9WE-8N-hrg"/>
                         <segue destination="N9w-EG-iTl" kind="relationship" relationship="tabItems" id="FEy-ai-WtI"/>
                         <segue destination="QHK-LU-2PP" kind="relationship" relationship="tabItems" id="RFf-Ed-Jnf"/>
@@ -736,10 +737,32 @@
         <!--Block View-->
         <scene sceneID="WGj-eW-cUd">
             <objects>
-                <viewController title="Block View" id="yWa-Wr-u3p" sceneMemberID="viewController">
+                <viewController title="Block View" id="yWa-Wr-u3p" customClass="BlockViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dRV-sw-sYP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cg-9t-tBy">
+                                <rect key="frame" x="5" y="350" width="211" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Block" id="sYy-O1-KMJ">
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29X-qp-2VQ">
+                                <rect key="frame" x="552" y="348" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JH1-fS-sME">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="yWa-Wr-u3p" id="2mE-8n-rsD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="Ueq-ft-NTe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -749,10 +772,32 @@
         <!--Item View-->
         <scene sceneID="o12-sD-19Y">
             <objects>
-                <viewController title="Item View" id="N9w-EG-iTl" sceneMemberID="viewController">
+                <viewController title="Item View" id="N9w-EG-iTl" customClass="ItemViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Tph-or-G7l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Twm-SZ-kB8">
+                                <rect key="frame" x="5" y="350" width="211" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Item" id="nKU-dD-Yd7">
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grJ-Aq-UAl">
+                                <rect key="frame" x="552" y="348" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="a0n-rj-1RO">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="N9w-EG-iTl" id="ace-Ng-9ip"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="kpo-R8-ypT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -766,6 +811,25 @@
                     <view key="view" id="wem-xB-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-ZA-NIe">
+                                <rect key="frame" x="5" y="350" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Entity" id="Hww-cD-uNx">
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHo-bg-jSg">
+                                <rect key="frame" x="552" y="348" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Lle-l4-yWz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="wu4-vq-EqN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -850,6 +914,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addBlock:" target="rlX-j7-cUS" id="szz-QQ-yhO"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47I-t2-ate">
                                             <rect key="frame" x="22" y="85" width="65" height="65"/>
@@ -874,6 +941,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addItem:" target="rlX-j7-cUS" id="uaU-fy-p0T"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-nQ-RRn">
                                             <rect key="frame" x="97" y="85" width="65" height="65"/>
@@ -898,6 +968,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addEntity:" target="rlX-j7-cUS" id="PK1-ti-9I1"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-Q7-GfC">
                                             <rect key="frame" x="172" y="85" width="65" height="65"/>
@@ -922,6 +995,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addStructure:" target="rlX-j7-cUS" id="g5d-il-TvO"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-0c-HNM">
                                             <rect key="frame" x="247" y="85" width="65" height="65"/>
@@ -946,6 +1022,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addDimension:" target="rlX-j7-cUS" id="5z3-ue-j4Z"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-2N-322">
                                             <rect key="frame" x="322" y="85" width="65" height="65"/>
@@ -994,6 +1073,25 @@
                     <view key="view" id="YnT-Qh-lx7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-1C-6BB">
+                                <rect key="frame" x="5" y="350" width="256" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Structure" id="Q1x-7X-MZY">
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjj-ty-v8G">
+                                <rect key="frame" x="552" y="348" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="B7E-65-Knn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="wvf-x8-jcq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1012,6 +1110,7 @@
         <image name="NSInfo" width="32" height="32"/>
         <image name="NSNetwork" width="32" height="32"/>
         <image name="NSQuickLookTemplate" width="19" height="12"/>
+        <image name="NSRightFacingTriangleTemplate" width="9" height="12"/>
         <image name="NSSlideshowTemplate" width="17" height="14"/>
         <image name="NSUser" width="32" height="32"/>
         <image name="blockIcon" width="154" height="154"/>

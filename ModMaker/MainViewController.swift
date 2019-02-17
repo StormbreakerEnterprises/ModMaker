@@ -21,6 +21,27 @@ class MainViewController: NSViewController {
         addObjectBox.isHidden = false
     }
     
+    @IBAction func addBlock(_ sender: Any) {
+        addObjectBox.isHidden = true
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 0)
+    }
+    
+    @IBAction func addItem(_ sender: Any) {
+        addObjectBox.isHidden = true
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 1)
+    }
+    
+    @IBAction func addEntity(_ sender: Any) {
+        
+    }
+    
+    @IBAction func addStructure(_ sender: Any) {
+    
+    }
+    
+    @IBAction func addDimension(_ sender: Any) {
+        
+    }
     
     @IBOutlet weak var addObjectBox: NSBox!
 }
