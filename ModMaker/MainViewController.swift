@@ -21,6 +21,10 @@ class MainViewController: NSViewController {
         addObjectBox.isHidden = false
     }
     
+    @IBAction func closeObjectBox(_ sender: Any) {
+        addObjectBox.isHidden = true
+    }
+    
     @IBAction func addBlock(_ sender: Any) {
         addObjectBox.isHidden = true
         (view.window?.contentViewController as? TabViewController)?.setTabView(index: 0)
@@ -32,15 +36,18 @@ class MainViewController: NSViewController {
     }
     
     @IBAction func addEntity(_ sender: Any) {
-        
+        addObjectBox.isHidden = true
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 2)
     }
     
     @IBAction func addStructure(_ sender: Any) {
-    
+        addObjectBox.isHidden = true
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 4)
     }
     
     @IBAction func addDimension(_ sender: Any) {
-        
+        addObjectBox.isHidden = true
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 5)
     }
     
     @IBOutlet weak var addObjectBox: NSBox!

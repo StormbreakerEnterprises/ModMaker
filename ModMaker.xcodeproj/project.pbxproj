@@ -11,6 +11,9 @@
 		B5417CD12219EFAB0049CB00 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CD02219EFAB0049CB00 /* TabViewController.swift */; };
 		B5417CD32219F8460049CB00 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CD22219F8460049CB00 /* BlockViewController.swift */; };
 		B5417CD52219F90C0049CB00 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CD42219F90C0049CB00 /* ItemViewController.swift */; };
+		B5417CD72219FBA10049CB00 /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CD62219FBA10049CB00 /* StructureViewController.swift */; };
+		B5417CD92219FBEA0049CB00 /* EntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CD82219FBEA0049CB00 /* EntityViewController.swift */; };
+		B5417CDB2219FC3C0049CB00 /* DimensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5417CDA2219FC3C0049CB00 /* DimensionViewController.swift */; };
 		B54694B12218BCF1008E63A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B02218BCF1008E63A9 /* AppDelegate.swift */; };
 		B54694B32218BCF1008E63A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B22218BCF1008E63A9 /* ViewController.swift */; };
 		B54694B52218BCF1008E63A9 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B42218BCF1008E63A9 /* Document.swift */; };
@@ -23,6 +26,9 @@
 		B5417CD02219EFAB0049CB00 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		B5417CD22219F8460049CB00 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		B5417CD42219F90C0049CB00 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		B5417CD62219FBA10049CB00 /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureViewController.swift; sourceTree = "<group>"; };
+		B5417CD82219FBEA0049CB00 /* EntityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewController.swift; sourceTree = "<group>"; };
+		B5417CDA2219FC3C0049CB00 /* DimensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensionViewController.swift; sourceTree = "<group>"; };
 		B54694AD2218BCF1008E63A9 /* ModMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54694B02218BCF1008E63A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54694B22218BCF1008E63A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 				B53CC3132219CDA7000CD587 /* MainViewController.swift */,
 				B5417CD22219F8460049CB00 /* BlockViewController.swift */,
 				B5417CD42219F90C0049CB00 /* ItemViewController.swift */,
+				B5417CD82219FBEA0049CB00 /* EntityViewController.swift */,
+				B5417CD62219FBA10049CB00 /* StructureViewController.swift */,
+				B5417CDA2219FC3C0049CB00 /* DimensionViewController.swift */,
 				B54694B02218BCF1008E63A9 /* AppDelegate.swift */,
 				B54694B22218BCF1008E63A9 /* ViewController.swift */,
 				B54694B42218BCF1008E63A9 /* Document.swift */,
@@ -148,13 +157,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5417CD72219FBA10049CB00 /* StructureViewController.swift in Sources */,
 				B5417CD52219F90C0049CB00 /* ItemViewController.swift in Sources */,
 				B54694B32218BCF1008E63A9 /* ViewController.swift in Sources */,
 				B54694B12218BCF1008E63A9 /* AppDelegate.swift in Sources */,
 				B54694B52218BCF1008E63A9 /* Document.swift in Sources */,
+				B5417CDB2219FC3C0049CB00 /* DimensionViewController.swift in Sources */,
 				B5417CD12219EFAB0049CB00 /* TabViewController.swift in Sources */,
 				B5417CD32219F8460049CB00 /* BlockViewController.swift in Sources */,
 				B53CC3142219CDA7000CD587 /* MainViewController.swift in Sources */,
+				B5417CD92219FBEA0049CB00 /* EntityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

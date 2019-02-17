@@ -711,6 +711,7 @@
                         <tabViewItem id="jRP-lw-clO"/>
                         <tabViewItem id="uRD-Dk-0Gh"/>
                         <tabViewItem id="Akr-6p-ctx"/>
+                        <tabViewItem id="Eas-8k-afY"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="roC-QT-mVS">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -728,6 +729,7 @@
                         <segue destination="QHK-LU-2PP" kind="relationship" relationship="tabItems" id="RFf-Ed-Jnf"/>
                         <segue destination="rlX-j7-cUS" kind="relationship" relationship="tabItems" id="7cu-n1-0jn"/>
                         <segue destination="8DC-rv-UtG" kind="relationship" relationship="tabItems" id="hzC-oa-QiL"/>
+                        <segue destination="5va-bh-AfE" kind="relationship" relationship="tabItems" id="v8J-AH-EkB"/>
                     </connections>
                 </tabViewController>
                 <customObject id="f6H-pm-XZ3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -807,7 +809,7 @@
         <!--Entity View-->
         <scene sceneID="rae-7a-xX0">
             <objects>
-                <viewController title="Entity View" id="QHK-LU-2PP" sceneMemberID="viewController">
+                <viewController title="Entity View" id="QHK-LU-2PP" customClass="EntityViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wem-xB-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -828,6 +830,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="QHK-LU-2PP" id="7h9-De-L89"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -1051,6 +1056,17 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-ch-afB">
+                                            <rect key="frame" x="379" y="234" width="29" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSStopProgressFreestandingTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wr5-Xy-8bc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="closeObjectBox:" target="rlX-j7-cUS" id="ji7-2P-SsM"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <color key="borderColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
@@ -1069,7 +1085,7 @@
         <!--Structure View-->
         <scene sceneID="JKD-tI-jQG">
             <objects>
-                <viewController title="Structure View" id="8DC-rv-UtG" sceneMemberID="viewController">
+                <viewController title="Structure View" id="8DC-rv-UtG" customClass="StructureViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="YnT-Qh-lx7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1090,6 +1106,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="8DC-rv-UtG" id="DSx-dj-7aP"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -1097,6 +1116,41 @@
                 <customObject id="wvf-x8-jcq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="1230"/>
+        </scene>
+        <!--Dimension View Controller-->
+        <scene sceneID="1QL-Xy-pKM">
+            <objects>
+                <viewController id="5va-bh-AfE" customClass="DimensionViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="kXk-YV-lRj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veb-ga-WlV">
+                                <rect key="frame" x="5" y="350" width="256" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Dimension" id="rlr-us-IDX">
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="snV-m3-rmE">
+                                <rect key="frame" x="546" y="348" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zzW-vo-bIk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="5va-bh-AfE" id="NId-km-iuW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="rKc-QP-WbU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1994" y="1230"/>
         </scene>
     </scenes>
     <resources>
@@ -1112,6 +1166,7 @@
         <image name="NSQuickLookTemplate" width="19" height="12"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="12"/>
         <image name="NSSlideshowTemplate" width="17" height="14"/>
+        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
         <image name="NSUser" width="32" height="32"/>
         <image name="blockIcon" width="154" height="154"/>
         <image name="itemIcon" width="110" height="110"/>
