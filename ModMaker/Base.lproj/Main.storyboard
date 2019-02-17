@@ -733,10 +733,10 @@
             </objects>
             <point key="canvasLocation" x="90" y="625"/>
         </scene>
-        <!--View Controller-->
+        <!--Block View-->
         <scene sceneID="WGj-eW-cUd">
             <objects>
-                <viewController id="yWa-Wr-u3p" sceneMemberID="viewController">
+                <viewController title="Block View" id="yWa-Wr-u3p" sceneMemberID="viewController">
                     <view key="view" id="dRV-sw-sYP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -746,10 +746,10 @@
             </objects>
             <point key="canvasLocation" x="-562" y="1230"/>
         </scene>
-        <!--View Controller-->
+        <!--Item View-->
         <scene sceneID="o12-sD-19Y">
             <objects>
-                <viewController id="N9w-EG-iTl" sceneMemberID="viewController">
+                <viewController title="Item View" id="N9w-EG-iTl" sceneMemberID="viewController">
                     <view key="view" id="Tph-or-G7l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -759,10 +759,10 @@
             </objects>
             <point key="canvasLocation" x="-1204" y="1230"/>
         </scene>
-        <!--View Controller-->
+        <!--Entity View-->
         <scene sceneID="rae-7a-xX0">
             <objects>
-                <viewController id="QHK-LU-2PP" sceneMemberID="viewController">
+                <viewController title="Entity View" id="QHK-LU-2PP" sceneMemberID="viewController">
                     <view key="view" id="wem-xB-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -987,10 +987,10 @@
             </objects>
             <point key="canvasLocation" x="90" y="1230"/>
         </scene>
-        <!--View Controller-->
+        <!--Structure View-->
         <scene sceneID="JKD-tI-jQG">
             <objects>
-                <viewController id="8DC-rv-UtG" sceneMemberID="viewController">
+                <viewController title="Structure View" id="8DC-rv-UtG" sceneMemberID="viewController">
                     <view key="view" id="YnT-Qh-lx7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
