@@ -16,6 +16,9 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addItemBox.isHidden = true
+        
         // Do any additional setup after loading the view.
         /*fileName = "testFile"
         let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -36,8 +39,10 @@ class ViewController: NSViewController {
     }
     
     @IBAction func addObjectToMod(_ sender: Any) {
+        addItemBox.isHidden = false
     }
     
+    @IBOutlet weak var addItemBox: NSBox!
     
     override var representedObject: Any? {
         didSet {
