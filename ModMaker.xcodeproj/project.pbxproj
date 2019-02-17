@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53CC3142219CDA7000CD587 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53CC3132219CDA7000CD587 /* MainViewController.swift */; };
 		B54694B12218BCF1008E63A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B02218BCF1008E63A9 /* AppDelegate.swift */; };
 		B54694B32218BCF1008E63A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B22218BCF1008E63A9 /* ViewController.swift */; };
 		B54694B52218BCF1008E63A9 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54694B42218BCF1008E63A9 /* Document.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53CC3132219CDA7000CD587 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B54694AD2218BCF1008E63A9 /* ModMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54694B02218BCF1008E63A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54694B22218BCF1008E63A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				B54694B82218BCF2008E63A9 /* Main.storyboard */,
 				B54694BB2218BCF2008E63A9 /* Info.plist */,
 				B54694BC2218BCF2008E63A9 /* ModMaker.entitlements */,
+				B53CC3132219CDA7000CD587 /* MainViewController.swift */,
 			);
 			path = ModMaker;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				B54694B32218BCF1008E63A9 /* ViewController.swift in Sources */,
 				B54694B12218BCF1008E63A9 /* AppDelegate.swift in Sources */,
 				B54694B52218BCF1008E63A9 /* Document.swift in Sources */,
+				B53CC3142219CDA7000CD587 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
