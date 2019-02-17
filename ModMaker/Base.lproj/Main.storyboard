@@ -744,7 +744,7 @@
                 </viewController>
                 <customObject id="Ueq-ft-NTe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="1108"/>
+            <point key="canvasLocation" x="-647" y="1101"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="o12-sD-19Y">
@@ -757,7 +757,7 @@
                 </viewController>
                 <customObject id="kpo-R8-ypT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-859" y="1108"/>
+            <point key="canvasLocation" x="-1134" y="1101"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rae-7a-xX0">
@@ -770,33 +770,36 @@
                 </viewController>
                 <customObject id="wu4-vq-EqN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="1108"/>
+            <point key="canvasLocation" x="869" y="1161"/>
         </scene>
         <!--Main View-->
         <scene sceneID="K8b-az-Y0i">
             <objects>
                 <viewController title="Main View" id="rlX-j7-cUS" customClass="MainViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="RIo-zo-n5A">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box fixedFrame="YES" boxType="custom" borderWidth="2" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="R4w-4G-dte">
-                                <rect key="frame" x="273" y="255" width="177" height="45"/>
+                                <rect key="frame" x="364" y="355" width="236" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                 <view key="contentView" ambiguous="YES" id="VeW-Cf-E9m">
-                                    <rect key="frame" x="2" y="2" width="173" height="41"/>
+                                    <rect key="frame" x="2" y="2" width="232" height="41"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-Yx-V8W">
-                                            <rect key="frame" x="12" y="5" width="30" height="30"/>
+                                            <rect key="frame" x="16" y="5" width="40" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAddTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="esV-au-T1D">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="addObject:" target="rlX-j7-cUS" id="aGj-4Q-qIq"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-qg-wtP">
-                                            <rect key="frame" x="52" y="5" width="30" height="30"/>
+                                            <rect key="frame" x="70" y="5" width="40" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSSlideshowTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HQX-dw-GdU">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -804,7 +807,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-Xh-G8h">
-                                            <rect key="frame" x="92" y="5" width="30" height="30"/>
+                                            <rect key="frame" x="123" y="5" width="41" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSActionTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="MPL-EG-f1b">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -812,7 +815,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cq-eO-DUH">
-                                            <rect key="frame" x="132" y="5" width="30" height="30"/>
+                                            <rect key="frame" x="177" y="5" width="40" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFollowLinkFreestandingTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5Li-Cq-ygp">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -824,12 +827,165 @@
                                 <color key="borderColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="fillColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
                             </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWf-sY-1sH">
+                                <rect key="frame" x="-2" y="355" width="269" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="ModMaker" id="ZgO-vg-kQz">
+                                    <font key="font" metaFont="system" size="50"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box fixedFrame="YES" boxType="custom" borderWidth="4" cornerRadius="4" title="AddObjectBox" translatesAutoresizingMaskIntoConstraints="NO" id="Oi2-Q9-Ffd">
+                                <rect key="frame" x="92" y="64" width="416" height="271"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" ambiguous="YES" id="wOC-b0-IqQ">
+                                    <rect key="frame" x="4" y="4" width="408" height="263"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7D-bE-bdH">
+                                            <rect key="frame" x="22" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2MC-Ll-EEa">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47I-t2-ate">
+                                            <rect key="frame" x="22" y="85" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jX-ak-zni">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4y-RQ-ALT">
+                                            <rect key="frame" x="22" y="10" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="y61-uS-FSx">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-Fj-RdO">
+                                            <rect key="frame" x="97" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="itemIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="A7D-iI-GsZ">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-nQ-RRn">
+                                            <rect key="frame" x="97" y="85" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8ba-Al-E0S">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAV-8a-tha">
+                                            <rect key="frame" x="97" y="10" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="vQM-u6-ngR">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-VR-9xd">
+                                            <rect key="frame" x="172" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSUser" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hte-4P-jXi">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-Q7-GfC">
+                                            <rect key="frame" x="172" y="85" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="03B-Po-86h">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woj-3A-tij">
+                                            <rect key="frame" x="172" y="10" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eTn-LS-XEu">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYO-Ge-nqE">
+                                            <rect key="frame" x="247" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSHomeTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jp-ad-3Il">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-0c-HNM">
+                                            <rect key="frame" x="247" y="85" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JfU-jv-ibN">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-Te-ukh">
+                                            <rect key="frame" x="247" y="10" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="02s-a4-586">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-W2-toh">
+                                            <rect key="frame" x="322" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nue-sc-Pek">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-2N-322">
+                                            <rect key="frame" x="322" y="85" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qfj-xR-BMc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-lT-Gbv">
+                                            <rect key="frame" x="322" y="10" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ev4-FF-Vd6">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgU-Bk-PZT">
+                                            <rect key="frame" x="20" y="230" width="370" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Add An Object To Your Mod" id="Ioh-kV-D5J">
+                                                <font key="font" metaFont="system" size="25"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <color key="borderColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <color key="fillColor" red="0.66778963800000002" green="0.67408019299999999" blue="0.67419594530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="addObjectBox" destination="Oi2-Q9-Ffd" id="F4W-6I-S2e"/>
+                    </connections>
                 </viewController>
                 <customObject id="EuG-vd-wVr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="1108"/>
+            <point key="canvasLocation" x="90" y="1230"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JKD-tI-jQG">
@@ -842,13 +998,18 @@
                 </viewController>
                 <customObject id="wvf-x8-jcq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="1108"/>
+            <point key="canvasLocation" x="1381" y="1148"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
         <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
+        <image name="NSHomeTemplate" width="14" height="14"/>
+        <image name="NSNetwork" width="32" height="32"/>
         <image name="NSSlideshowTemplate" width="17" height="14"/>
+        <image name="NSUser" width="32" height="32"/>
+        <image name="blockIcon" width="154" height="154"/>
+        <image name="itemIcon" width="110" height="110"/>
     </resources>
 </document>

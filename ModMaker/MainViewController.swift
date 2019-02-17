@@ -12,7 +12,15 @@ class MainViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addObjectBox.isHidden = true
         // Do view setup here.
     }
     
+    @IBAction func addObject(_ sender: Any) {
+        addObjectBox.isHidden = false
+    }
+    
+    
+    @IBOutlet weak var addObjectBox: NSBox!
 }
