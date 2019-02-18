@@ -15,6 +15,10 @@ class TechnologyViewController: NSTabViewController {
         // Do view setup here.
     }
     
+    @IBAction func chooseTech(_ sender: Any) {
+         (view.window?.contentViewController as? TabViewController)?.setTabView(index: 6)
+    }
+    
     @IBAction func goBack(_ sender: Any) {
         (view.window?.contentViewController as? TabViewController)?.setTabView(index: 3)
     }
