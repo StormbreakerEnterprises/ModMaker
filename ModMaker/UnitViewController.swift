@@ -18,4 +18,8 @@ class UnitViewController : NSTabViewController {
     @IBAction func goBack(_ sender: Any) {
         (view.window?.contentViewController as? TabViewController)?.setTabView(index: 3)
     }
+    @IBAction func chooseTech(_ sender: Any) {
+        (view.window?.contentViewController as? TabViewController)?.setTabView(index: 6)
+    }
+    @IBOutlet weak var prerequisiteLabel: NSTextField!
 }

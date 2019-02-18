@@ -879,8 +879,31 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGh-5f-atj">
+                                <rect key="frame" x="14" y="182" width="236" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Choose Prerequisite Technology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P5q-PQ-ESW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="chooseTech:" target="N9w-EG-iTl" id="Xr8-Q1-vz2"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-k4-dkN">
+                                <rect key="frame" x="18" y="157" width="228" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Choose Prerequisite Tech" id="szQ-ra-z6U">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="prerequisiteLabel" destination="H5c-k4-dkN" id="6EU-be-rcV"/>
+                    </connections>
                 </viewController>
                 <customObject id="kpo-R8-ypT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1314,11 +1337,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7U-rg-JYg">
-                                            <rect key="frame" x="0.0" y="0.0" width="1259" height="325"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="2444" height="325"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-RF-aRs">
-                                                    <rect key="frame" x="-1793" y="135" width="107" height="32"/>
+                                                    <rect key="frame" x="14" y="146" width="107" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Agriculture" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YBN-at-I6o">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1326,7 +1349,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAN-lU-JFZ">
-                                                    <rect key="frame" x="-1695" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="112" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Pottery" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TRQ-tu-3Cm">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1334,7 +1357,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-1i-QUH">
-                                                    <rect key="frame" x="-1557" y="277" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="288" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Sailing" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="D4k-AY-dZl">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1342,7 +1365,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDb-54-EhN">
-                                                    <rect key="frame" x="-1557" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Writing" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FFw-f9-wgX">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1350,7 +1373,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3JT-bY-p8a">
-                                                    <rect key="frame" x="-1296" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="511" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Philosiphy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2kg-Sg-VBZ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1358,7 +1381,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-10-irU">
-                                                    <rect key="frame" x="-1296" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="511" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Drama and Poetry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aSQ-Ok-tWs">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1366,7 +1389,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gip-Z9-YKi">
-                                                    <rect key="frame" x="-1557" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Calender" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3sQ-Jf-Omq">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1374,7 +1397,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-h4-byg">
-                                                    <rect key="frame" x="-1557" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Trapping" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lkG-Tn-Sk8">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1382,7 +1405,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XN6-TR-yeX">
-                                                    <rect key="frame" x="-1557" y="135" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="146" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="The Wheel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ymn-bF-IGz">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1390,7 +1413,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Mv-lf-7eD">
-                                                    <rect key="frame" x="-1426" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="381" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Horseback Riding" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b4S-Ql-BLf">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1398,7 +1421,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBm-6R-TCg">
-                                                    <rect key="frame" x="-1426" y="135" width="138" height="32"/>
+                                                    <rect key="frame" x="381" y="146" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Mathematics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3LE-oI-HEq">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1406,7 +1429,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGN-LL-AvI">
-                                                    <rect key="frame" x="-1296" y="135" width="138" height="32"/>
+                                                    <rect key="frame" x="511" y="146" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Currency" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gOH-vP-pro">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1414,7 +1437,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4W-N6-4wU">
-                                                    <rect key="frame" x="-1155" y="135" width="138" height="32"/>
+                                                    <rect key="frame" x="652" y="146" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Guilds" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="no6-MH-tMc">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1422,7 +1445,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-xb-80x">
-                                                    <rect key="frame" x="-1006" y="147" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="158" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Chivalry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RUb-1v-N5H">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1430,7 +1453,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XeI-Uh-q4f">
-                                                    <rect key="frame" x="-1006" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Education" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fhh-5s-13v">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1438,7 +1461,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPZ-ZY-bXi">
-                                                    <rect key="frame" x="-1006" y="277" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="288" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Compass" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9DX-4K-fGp">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1446,7 +1469,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSL-l9-Eld">
-                                                    <rect key="frame" x="-1155" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="652" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Civil Service" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hbm-iK-SQA">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1454,7 +1477,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="614-dd-uY4">
-                                                    <rect key="frame" x="-1426" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="381" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Construction" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l5f-ka-P0g">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1462,7 +1485,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9So-f0-3eF">
-                                                    <rect key="frame" x="-1296" y="96" width="138" height="32"/>
+                                                    <rect key="frame" x="511" y="107" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Engineering" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ql7-EB-b7V">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1470,7 +1493,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsQ-Ku-ZoC">
-                                                    <rect key="frame" x="-1155" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="652" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Metal Casting" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0ap-B7-D06">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1478,7 +1501,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2e-ft-fzx">
-                                                    <rect key="frame" x="-1006" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Physics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TmS-wx-WWK">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1486,7 +1509,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-41-HeI">
-                                                    <rect key="frame" x="-1006" y="96" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="107" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Machinary" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zRK-E1-vvk">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1494,7 +1517,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-AY-IGr">
-                                                    <rect key="frame" x="-868" y="96" width="138" height="32"/>
+                                                    <rect key="frame" x="939" y="107" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Printing Press" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ehk-2G-GGW">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1502,7 +1525,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FB6-jJ-bbq">
-                                                    <rect key="frame" x="-723" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="1084" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Metalurgy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="imm-iS-0Ie">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1510,7 +1533,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-iU-6nT">
-                                                    <rect key="frame" x="-585" y="104" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="115" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Rifiling" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NpC-GU-DXw">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1518,7 +1541,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drp-M0-95u">
-                                                    <rect key="frame" x="-723" y="147" width="138" height="32"/>
+                                                    <rect key="frame" x="1084" y="158" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Economics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LLh-3b-cGN">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1526,7 +1549,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3c-cg-v1D">
-                                                    <rect key="frame" x="-585" y="147" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="158" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Industrialization" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pHx-mJ-r7j">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1534,7 +1557,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1W5-wm-EsM">
-                                                    <rect key="frame" x="-723" y="180" width="138" height="32"/>
+                                                    <rect key="frame" x="1084" y="191" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Architecture" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qfY-Cl-VN7">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1542,7 +1565,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIX-xe-G7d">
-                                                    <rect key="frame" x="-723" y="22" width="138" height="32"/>
+                                                    <rect key="frame" x="1084" y="33" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Chemistry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EsL-4w-x6g">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1550,7 +1573,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-9e-mMD">
-                                                    <rect key="frame" x="-585" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Military Science" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NqS-lu-BUV">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1558,7 +1581,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XnX-BS-sMN">
-                                                    <rect key="frame" x="-447" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="1360" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Dynamite" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JM2-8L-OHO">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1566,7 +1589,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moH-BW-8wc">
-                                                    <rect key="frame" x="-447" y="126" width="138" height="32"/>
+                                                    <rect key="frame" x="1360" y="137" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Steam Power" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rmX-ge-DuR">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1574,7 +1597,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4i-Mr-9JA">
-                                                    <rect key="frame" x="-309" y="126" width="138" height="32"/>
+                                                    <rect key="frame" x="1498" y="137" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Flight" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ehj-a8-JIX">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1582,7 +1605,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-Q7-t7U">
-                                                    <rect key="frame" x="-171" y="126" width="138" height="32"/>
+                                                    <rect key="frame" x="1636" y="137" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Balistics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="y7M-H7-xB0">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1590,7 +1613,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-Vh-Ucq">
-                                                    <rect key="frame" x="-33" y="126" width="138" height="32"/>
+                                                    <rect key="frame" x="1774" y="137" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Radar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EhO-br-xtM">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1598,7 +1621,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-Gq-5fp">
-                                                    <rect key="frame" x="-309" y="93" width="138" height="32"/>
+                                                    <rect key="frame" x="1498" y="104" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Railroad" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pFR-l8-RP3">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1606,7 +1629,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaV-m5-iYE">
-                                                    <rect key="frame" x="-171" y="93" width="138" height="32"/>
+                                                    <rect key="frame" x="1636" y="104" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Combustion" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7gO-df-Qhl">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1614,7 +1637,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3tS-vc-Pjo">
-                                                    <rect key="frame" x="-33" y="93" width="138" height="32"/>
+                                                    <rect key="frame" x="1774" y="104" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Combined Arms" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S0N-7D-dUb">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1622,7 +1645,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOR-Pl-6Xj">
-                                                    <rect key="frame" x="-585" y="22" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="33" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Fertilizer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BRp-CT-Rg4">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1630,7 +1653,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-EJ-xyg">
-                                                    <rect key="frame" x="-868" y="147" width="138" height="32"/>
+                                                    <rect key="frame" x="939" y="158" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Banking" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AFG-wp-FKb">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1638,7 +1661,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpC-mZ-3zB">
-                                                    <rect key="frame" x="-868" y="180" width="138" height="32"/>
+                                                    <rect key="frame" x="939" y="191" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Acoustics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V3o-zT-kdC">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1646,7 +1669,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-JP-xgu">
-                                                    <rect key="frame" x="-868" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="939" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Astronomy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uoN-SU-DkY">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1654,7 +1677,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-iZ-9Y6">
-                                                    <rect key="frame" x="-723" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="1084" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Navigation" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JGI-ad-6hd">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1662,7 +1685,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoL-Ga-YGA">
-                                                    <rect key="frame" x="-585" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Archeology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ViR-Ha-ljD">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1670,7 +1693,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-mJ-dcf">
-                                                    <rect key="frame" x="-447" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="1360" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Biology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gnF-hb-gNx">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1678,7 +1701,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cn5-y9-Bs4">
-                                                    <rect key="frame" x="-309" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="1498" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Refrigeration" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qxo-5V-5Zc">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1686,7 +1709,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKz-lV-nI7">
-                                                    <rect key="frame" x="-33" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="1774" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Penicilin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dwz-8l-r4g">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1694,7 +1717,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-in-34H">
-                                                    <rect key="frame" x="-33" y="189" width="138" height="32"/>
+                                                    <rect key="frame" x="1774" y="200" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Atomic Theory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mvz-ev-bsI">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1702,7 +1725,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCM-VQ-OXR">
-                                                    <rect key="frame" x="105" y="127" width="138" height="32"/>
+                                                    <rect key="frame" x="1912" y="138" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Rocketry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VwG-sc-I41">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1710,7 +1733,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yq4-w2-sd8">
-                                                    <rect key="frame" x="105" y="94" width="138" height="32"/>
+                                                    <rect key="frame" x="1912" y="105" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Computers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nn1-NH-tPY">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1718,7 +1741,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-Og-qgB">
-                                                    <rect key="frame" x="105" y="242" width="138" height="32"/>
+                                                    <rect key="frame" x="1912" y="253" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Ecology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zQO-LY-12B">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1726,7 +1749,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHy-Lp-cci">
-                                                    <rect key="frame" x="105" y="190" width="138" height="32"/>
+                                                    <rect key="frame" x="1912" y="201" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Nuclear Fission" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dLt-9V-xoR">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1734,7 +1757,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frA-l9-Tnb">
-                                                    <rect key="frame" x="237" y="136" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="147" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Satelites" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x86-yq-GoX">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1742,7 +1765,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-j4-GEI">
-                                                    <rect key="frame" x="237" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Advanced Balistics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GYH-oF-iqB">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1750,7 +1773,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQb-FD-fpk">
-                                                    <rect key="frame" x="237" y="85" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="96" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Lasers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cqb-85-tvf">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1758,7 +1781,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-iB-1SB">
-                                                    <rect key="frame" x="237" y="110" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="121" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Robotics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MsN-xA-CLk">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1766,7 +1789,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebo-JT-hV3">
-                                                    <rect key="frame" x="237" y="253" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="264" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Telecomunication" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="79o-1r-Xei">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1774,7 +1797,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PI8-Sw-10b">
-                                                    <rect key="frame" x="237" y="220" width="138" height="32"/>
+                                                    <rect key="frame" x="2044" y="231" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Mobile Tactics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zaE-2G-qRj">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1782,7 +1805,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-qD-T8Z">
-                                                    <rect key="frame" x="-309" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="1498" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Radio" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="z5h-bn-rjn">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1790,7 +1813,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1H-fw-Q4x">
-                                                    <rect key="frame" x="-171" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="1636" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Plastics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Myt-7w-lS0">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1798,7 +1821,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-7g-uJ0">
-                                                    <rect key="frame" x="-309" y="168" width="138" height="32"/>
+                                                    <rect key="frame" x="1498" y="179" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Replacable Parts" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Sat-3w-uyJ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1806,7 +1829,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niH-Zu-oBZ">
-                                                    <rect key="frame" x="-171" y="168" width="138" height="32"/>
+                                                    <rect key="frame" x="1636" y="179" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Electronics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uj8-ab-WEQ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1814,7 +1837,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hu-Lr-9Ch">
-                                                    <rect key="frame" x="-447" y="208" width="138" height="32"/>
+                                                    <rect key="frame" x="1360" y="219" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Electricity" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aA3-mz-9MQ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1822,7 +1845,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jID-D6-Evw">
-                                                    <rect key="frame" x="-585" y="180" width="138" height="32"/>
+                                                    <rect key="frame" x="1222" y="191" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Scientific Theory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oXf-a5-Jn3">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1830,7 +1853,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJO-Hf-Cjj">
-                                                    <rect key="frame" x="-1006" y="22" width="138" height="32"/>
+                                                    <rect key="frame" x="801" y="33" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Steel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="z6b-Hh-fv5">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1838,7 +1861,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ytk-rD-bri">
-                                                    <rect key="frame" x="-868" y="22" width="138" height="32"/>
+                                                    <rect key="frame" x="939" y="33" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Gunpowder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HDn-y3-ou2">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1846,7 +1869,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-A1-Egd">
-                                                    <rect key="frame" x="-1695" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="112" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Animal Husbandry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wj0-uB-hiQ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1854,7 +1877,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XA-TL-S2n">
-                                                    <rect key="frame" x="-1695" y="110" width="138" height="32"/>
+                                                    <rect key="frame" x="112" y="121" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Archery" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yNU-rr-s37">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1862,7 +1885,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-Ct-EpW">
-                                                    <rect key="frame" x="-1695" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="112" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Mining" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d6V-48-Es7">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1870,7 +1893,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7F-M2-CMV">
-                                                    <rect key="frame" x="-1557" y="64" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="75" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Masonry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yO2-26-xlf">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1878,7 +1901,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jeq-E1-F08">
-                                                    <rect key="frame" x="-1557" y="13" width="138" height="32"/>
+                                                    <rect key="frame" x="250" y="24" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Bronze Working" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GlW-JL-hyb">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1886,7 +1909,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSn-M9-I3v">
-                                                    <rect key="frame" x="-1296" y="13" width="138" height="32"/>
+                                                    <rect key="frame" x="511" y="24" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Iron Working" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="28B-Bj-iQz">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1894,7 +1917,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y11-yl-vmL">
-                                                    <rect key="frame" x="-1426" y="277" width="138" height="32"/>
+                                                    <rect key="frame" x="381" y="288" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Optics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t0M-zf-4Ht">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1902,7 +1925,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XM-Ug-EAg">
-                                                    <rect key="frame" x="-1155" y="241" width="138" height="32"/>
+                                                    <rect key="frame" x="652" y="252" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Theology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cEV-cb-arB">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1910,7 +1933,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjb-gb-08x">
-                                                    <rect key="frame" x="375" y="136" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="147" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Nuclear Fusion" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aKH-iW-nzx">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1918,7 +1941,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wb5-C5-AbH">
-                                                    <rect key="frame" x="375" y="286" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="297" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="The Internet" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EYk-q9-cyA">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1926,7 +1949,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0v-at-P1y">
-                                                    <rect key="frame" x="375" y="85" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="96" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Stealth" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="03U-rs-3xn">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1934,7 +1957,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xy2-H8-xzN">
-                                                    <rect key="frame" x="375" y="110" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="121" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Nanotechnology" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dMZ-KY-rsH">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1942,7 +1965,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-HQ-1vd">
-                                                    <rect key="frame" x="375" y="253" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="264" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Globalization" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MCr-Mu-kDP">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1950,7 +1973,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LJ-BW-R6B">
-                                                    <rect key="frame" x="375" y="220" width="138" height="32"/>
+                                                    <rect key="frame" x="2182" y="231" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Particle Physics" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fSS-kf-ea8">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1958,7 +1981,7 @@
                                                     </buttonCell>
                                                 </button>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PT4-ck-Hs2">
-                                                    <rect key="frame" x="513" y="160" width="138" height="32"/>
+                                                    <rect key="frame" x="2320" y="171" width="138" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Future Tech" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b1A-il-bUt">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
