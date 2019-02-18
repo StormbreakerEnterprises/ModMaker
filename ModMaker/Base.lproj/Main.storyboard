@@ -739,7 +739,7 @@
         <!--Block View-->
         <scene sceneID="WGj-eW-cUd">
             <objects>
-                <viewController title="Block View" id="yWa-Wr-u3p" customClass="BlockViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Block View" id="yWa-Wr-u3p" customClass="LeaderViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dRV-sw-sYP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -747,7 +747,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cg-9t-tBy">
                                 <rect key="frame" x="5" y="350" width="211" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Block" id="sYy-O1-KMJ">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Leader" id="sYy-O1-KMJ">
                                     <font key="font" metaFont="system" size="36"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -774,7 +774,7 @@
         <!--Item View-->
         <scene sceneID="o12-sD-19Y">
             <objects>
-                <viewController title="Item View" id="N9w-EG-iTl" customClass="ItemViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Item View" id="N9w-EG-iTl" customClass="UnitViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Tph-or-G7l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -782,7 +782,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Twm-SZ-kB8">
                                 <rect key="frame" x="5" y="350" width="211" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Item" id="nKU-dD-Yd7">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Unit" id="nKU-dD-Yd7">
                                     <font key="font" metaFont="system" size="36"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -799,6 +799,24 @@
                                     <action selector="goBack:" target="N9w-EG-iTl" id="ace-Ng-9ip"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S76-Tp-eJR">
+                                <rect key="frame" x="18" y="249" width="80" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Unit Health" id="eYg-4d-bKj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-fb-VAs">
+                                <rect key="frame" x="18" y="216" width="92" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Unit Strength" id="aBN-bu-XeS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                 </viewController>
@@ -809,15 +827,15 @@
         <!--Entity View-->
         <scene sceneID="rae-7a-xX0">
             <objects>
-                <viewController title="Entity View" id="QHK-LU-2PP" customClass="EntityViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Entity View" id="QHK-LU-2PP" customClass="BuildingViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wem-xB-AhQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-ZA-NIe">
-                                <rect key="frame" x="5" y="350" width="173" height="43"/>
+                                <rect key="frame" x="5" y="350" width="223" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Entity" id="Hww-cD-uNx">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Building" id="Hww-cD-uNx">
                                     <font key="font" metaFont="system" size="36"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -915,7 +933,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7D-bE-bdH">
                                             <rect key="frame" x="22" y="160" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2MC-Ll-EEa">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSUser" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2MC-Ll-EEa">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -926,7 +944,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47I-t2-ate">
                                             <rect key="frame" x="22" y="85" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFlowViewTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jX-ak-zni">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jX-ak-zni">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -934,7 +952,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4y-RQ-ALT">
                                             <rect key="frame" x="22" y="10" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="y61-uS-FSx">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="y61-uS-FSx">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -942,7 +960,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-Fj-RdO">
                                             <rect key="frame" x="97" y="160" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="itemIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="A7D-iI-GsZ">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarGetInfoTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="A7D-iI-GsZ">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -953,7 +971,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-nQ-RRn">
                                             <rect key="frame" x="97" y="85" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAdvanced" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8ba-Al-E0S">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8ba-Al-E0S">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -961,7 +979,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAV-8a-tha">
                                             <rect key="frame" x="97" y="10" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="vQM-u6-ngR">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="vQM-u6-ngR">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -969,7 +987,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-VR-9xd">
                                             <rect key="frame" x="172" y="160" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSUser" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hte-4P-jXi">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSHomeTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hte-4P-jXi">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -980,7 +998,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-Q7-GfC">
                                             <rect key="frame" x="172" y="85" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSQuickLookTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="03B-Po-86h">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="03B-Po-86h">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -988,7 +1006,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woj-3A-tij">
                                             <rect key="frame" x="172" y="10" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eTn-LS-XEu">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eTn-LS-XEu">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -996,7 +1014,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYO-Ge-nqE">
                                             <rect key="frame" x="247" y="160" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSHomeTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jp-ad-3Il">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSBonjour" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jp-ad-3Il">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1007,7 +1025,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-0c-HNM">
                                             <rect key="frame" x="247" y="85" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSBluetoothTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JfU-jv-ibN">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JfU-jv-ibN">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1015,26 +1033,15 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-Te-ukh">
                                             <rect key="frame" x="247" y="10" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="02s-a4-586">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="02s-a4-586">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
-                                        </button>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-W2-toh">
-                                            <rect key="frame" x="322" y="160" width="65" height="65"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nue-sc-Pek">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="addDimension:" target="rlX-j7-cUS" id="5z3-ue-j4Z"/>
-                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-2N-322">
                                             <rect key="frame" x="322" y="85" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSInfo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qfj-xR-BMc">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qfj-xR-BMc">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1042,7 +1049,7 @@
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-lT-Gbv">
                                             <rect key="frame" x="322" y="10" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="blockIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ev4-FF-Vd6">
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSCaution" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ev4-FF-Vd6">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1067,6 +1074,17 @@
                                                 <action selector="closeObjectBox:" target="rlX-j7-cUS" id="ji7-2P-SsM"/>
                                             </connections>
                                         </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-W2-toh">
+                                            <rect key="frame" x="322" y="160" width="65" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSEveryone" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nue-sc-Pek">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="addDimension:" target="rlX-j7-cUS" id="5z3-ue-j4Z"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <color key="borderColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
@@ -1085,7 +1103,7 @@
         <!--Structure View-->
         <scene sceneID="JKD-tI-jQG">
             <objects>
-                <viewController title="Structure View" id="8DC-rv-UtG" customClass="StructureViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Structure View" id="8DC-rv-UtG" customClass="TechnologyViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="YnT-Qh-lx7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1093,7 +1111,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-1C-6BB">
                                 <rect key="frame" x="5" y="350" width="256" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Structure" id="Q1x-7X-MZY">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Technology" id="Q1x-7X-MZY">
                                     <font key="font" metaFont="system" size="36"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1117,18 +1135,18 @@
             </objects>
             <point key="canvasLocation" x="1346" y="1230"/>
         </scene>
-        <!--Dimension View Controller-->
+        <!--Policy View Controller-->
         <scene sceneID="1QL-Xy-pKM">
             <objects>
-                <viewController id="5va-bh-AfE" customClass="DimensionViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5va-bh-AfE" customClass="PolicyViewController" customModule="ModMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kXk-YV-lRj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veb-ga-WlV">
-                                <rect key="frame" x="5" y="350" width="256" height="43"/>
+                                <rect key="frame" x="5" y="350" width="281" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Dimension" id="rlr-us-IDX">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Add Social Policy" id="rlr-us-IDX">
                                     <font key="font" metaFont="system" size="36"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1156,19 +1174,15 @@
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
         <image name="NSAddTemplate" width="11" height="11"/>
-        <image name="NSAdvanced" width="32" height="32"/>
-        <image name="NSBluetoothTemplate" width="7" height="14"/>
-        <image name="NSFlowViewTemplate" width="18" height="10"/>
+        <image name="NSBonjour" width="32" height="32"/>
+        <image name="NSCaution" width="32" height="32"/>
+        <image name="NSEveryone" width="32" height="32"/>
         <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
         <image name="NSHomeTemplate" width="14" height="14"/>
-        <image name="NSInfo" width="32" height="32"/>
-        <image name="NSNetwork" width="32" height="32"/>
-        <image name="NSQuickLookTemplate" width="19" height="12"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="12"/>
         <image name="NSSlideshowTemplate" width="17" height="14"/>
         <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
+        <image name="NSTouchBarGetInfoTemplate" width="18" height="30"/>
         <image name="NSUser" width="32" height="32"/>
-        <image name="blockIcon" width="154" height="154"/>
-        <image name="itemIcon" width="110" height="110"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  EntityViewController.swift
 //  ModMaker
 //
 //  Created by Ben on 2/17/19.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ItemViewController: NSTabViewController {
+class BuildingViewController: NSTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

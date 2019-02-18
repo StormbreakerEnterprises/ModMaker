@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class StructureViewController: NSTabViewController {
+class TechnologyViewController: NSTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
